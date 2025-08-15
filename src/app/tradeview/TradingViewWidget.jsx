@@ -12,7 +12,7 @@ function TradingViewWidget() {
     script.async = true;
     script.innerHTML = `
         {
-          "allow_symbol_change": true,
+          "allow_symbol_change": false,
           "calendar": false,
           "details": false,
           "hide_side_toolbar": true,
@@ -24,7 +24,7 @@ function TradingViewWidget() {
           "locale": "en",
           "save_image": true,
           "style": "1",
-          "symbol": "NASDAQ:AAPL",
+          "symbol": "BINANCE:BTCUSDT",
           "theme": "dark",
           "timezone": "Etc/UTC",
           "backgroundColor": "#0F0F0F",
@@ -48,15 +48,6 @@ function TradingViewWidget() {
         className="tradingview-widget-container__widget"
         style={{ height: "calc(100% - 32px)", width: "100%" }}
       ></div>
-      <div className="tradingview-widget-copyright">
-        <a
-          href="https://www.tradingview.com/symbols/NASDAQ-AAPL/?exchange=NASDAQ"
-          rel="noopener nofollow"
-          target="_blank"
-        >
-          <span className="blue-text">AAPL chart by TradingView</span>
-        </a>
-      </div>
     </div>
   );
 }
